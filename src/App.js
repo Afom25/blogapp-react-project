@@ -1,15 +1,16 @@
 
 import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
-  const title = 'Welcome to BLog';
-  const likes = 50;
+ 
   return (
     <div className="App">
-      
-       <h1>{title}</h1>
-       <h5> Liked {likes} times</h5>
-  
+      <Navbar />
+      <div className="content">
+       <Home/>
+      </div>
     </div>
   );
 }
